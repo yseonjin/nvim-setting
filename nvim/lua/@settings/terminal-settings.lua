@@ -51,8 +51,6 @@ local function setup()
     open_terminal_vertical(command.args);
   end,
     { nargs = '?' })
-
-  vim.keymap.set('n', '<D-C>', ':split | terinal', { noremap = true, silent = true })
   vim.keymap.set('n', '<C-a>v', ':Vterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('n', '<C-a>c', ':Hterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('n', '<C-a>x', function()
@@ -61,7 +59,6 @@ local function setup()
     end
   end, { noremap = true, silent = true })
 
-  vim.keymap.set('t', '<C-a>s', '<C-\\><C-n>:Hterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('t', '<C-a>v', '<C-\\><C-n>:Vterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('t', '<C-a>c', '<C-\\><C-n>:Hterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('t', '<C-a>x', '<C-\\><C-n>:q!<CR>', { noremap = true, silent = true })

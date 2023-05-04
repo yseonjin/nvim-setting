@@ -10,7 +10,7 @@ end
 -----------------------
 
 Require('@plugins.load-plugins')        -- load plugins
-Require('@settings.terminal-settings')    -- make terminal plugins
+Require('@settings.terminal-settings').setup({})  -- make terminal
 Require('@settings.options')            -- set vim options
 Require('@settings.key-bindings')       -- set key binding
 Require("nvim-tree").setup({
@@ -31,7 +31,3 @@ Require("nvim-tree").setup({
 vim.g.rainbow_active = 1
 vim.cmd('colorscheme tender')
 
-------------------------
-function Log(something)
-  vim.cmd('echo ' .. vim.inspect(something))
-end
