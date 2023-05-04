@@ -8,5 +8,8 @@ Plug('nvim-tree/nvim-tree.lua') -- file tree
 Plug('luochen1990/rainbow') -- colorized bracket
 Plug('jacoborus/tender.vim') -- vim theme
 
+
+
+
 vim.fn['plug#end']()
 

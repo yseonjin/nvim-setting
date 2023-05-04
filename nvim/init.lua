@@ -1,4 +1,3 @@
-
 function Require(module_name)
   local ok, mod = pcall(require, module_name)
   if not ok then
@@ -10,9 +9,10 @@ end
 
 -----------------------
 
-Require('@plugins.load-plugins')    -- load plugins
-Require('@settings.options')        -- set vim options
-Require('@settings.key-bindings')   -- set key binding
+Require('@plugins.load-plugins')        -- load plugins
+Require('@settings.terminal-settings')    -- make terminal plugins
+Require('@settings.options')            -- set vim options
+Require('@settings.key-bindings')       -- set key binding
 Require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
