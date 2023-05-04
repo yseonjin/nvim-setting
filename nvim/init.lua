@@ -10,9 +10,9 @@ end
 -----------------------
 
 Require('@plugins.load-plugins')        -- load plugins
-Require('@settings.terminal-settings').setup({})  -- make terminal
 Require('@settings.options')            -- set vim options
 Require('@settings.key-bindings')       -- set key binding
+Require('@settings.terminal-settings').setup({})  -- make terminal
 Require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -25,7 +25,6 @@ Require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-
 
 
 vim.g.rainbow_active = 1
