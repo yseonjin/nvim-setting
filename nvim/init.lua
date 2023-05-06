@@ -13,7 +13,9 @@ Require('@plugins.load-plugins')        -- load plugins
 Require('@settings.options')            -- set vim options
 Require('@settings.key-bindings')       -- set key binding
 Require('@settings.terminal-settings').setup({})  -- make terminal
---Require('@settings.terminal-settings').setup({})  -- make terminal
+
+
+
+
 vim.g.rainbow_active = 1
 vim.cmd('colorscheme tender')
-
