@@ -8,7 +8,7 @@ function Require(module_name)
 end
 
 -----------------------
-
+    
 Require('@plugins.load-plugins')        -- load plugins
 Require('@settings.options')            -- set vim options
 Require('@settings.key-bindings')       -- set key binding

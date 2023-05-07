@@ -11,7 +11,7 @@ Plug('jacoborus/tender.vim')         -- vim theme
 Plug('terrortylor/nvim-comment')     -- auto comment
 Plug('folke/todo-comments.nvim')     -- todo comment with plenary.nvim
 Plug('nvim-lua/plenary.nvim')        -- lua util function set like loadash in javascript
-
+Plug('neovim/nvim-lspconfig')        -- lsp server adaptor
 
 vim.fn['plug#end']()
 
@@ -20,4 +20,4 @@ vim.fn['plug#end']()
 -- setup plugins
 Require('@plugins.configs.nvim-tree')
 Require('@plugins.configs.nvim-comment')
-require('nvim_comment').setup({})
+Require('@plugins.configs.nvim-lspconfig')

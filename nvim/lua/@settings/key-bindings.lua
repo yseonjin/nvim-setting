@@ -13,7 +13,6 @@ vim.keymap.set('n','<C-w><Down>','<C-w>j',{noremap=true, silent = true})
 vim.keymap.set('n','<C-w><Up>','<C-w>k',{noremap=true, silent = true})
 vim.keymap.set('n','<C-w><Right>','<C-w>l',{noremap=true, silent = true})
 
-
 vim.keymap.set('i','<C-s>','<ESC>:w<CR>i',{silent = true})
 vim.keymap.set('i','<C-w><Left>','<ESC><C-w>hi',{noremap=true, silent = true})
 vim.keymap.set('i','<C-w><Down>','<ESC><C-w>ji',{noremap=true, silent = true})
@@ -24,4 +23,9 @@ vim.keymap.set('i','<C-w><Right>','<ESC><C-w>li',{noremap=true, silent = true})
 vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('v', '<', '<gv')
 
+
+vim.keymap.set('t','<C-w><Left>','<C-\\><C-n><C-w>h',{noremap=true, silent = true})
+vim.keymap.set('t','<C-w><Down>','<C-\\><C-n><C-w>j',{noremap=true, silent = true})
+vim.keymap.set('t','<C-w><Up>','<C-\\><C-n><C-w>k',{noremap=true, silent = true})
+vim.keymap.set('t','<C-w><Right>','<C-\\><C-n><C-w>l',{noremap=true, silent = true})
 

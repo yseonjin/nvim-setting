@@ -64,6 +64,7 @@ local function setup()
   vim.keymap.set('t', '<C-a>x', '<C-\\><C-n>:q!<CR>', { noremap = true, silent = true })
 end
 
+
 return {
   setup = setup,
   open_terminal_horizontal = open_terminal_horizontal,
