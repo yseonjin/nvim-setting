@@ -31,6 +31,7 @@ vim.opt.backspace = { 'indent', 'eol', 'start' }
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 vim.cmd('syntax on')
 vim.opt.pumheight = 10
+vim.opt.clipboard="unnamed"
 
 -- langmap
 vim.opt.langmap = 'ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz'

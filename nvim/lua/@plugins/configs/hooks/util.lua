@@ -1,5 +1,5 @@
-local filetype_of = require('utils.buffer').filetype_of
-local map = require('utils.list').map
+local filetype_of = require('@utils.buffer').filetype_of
+local map = require('@utils.list').map
 
 local use_handlers_with_filetype = function(filetype_handlers_mapping)
   return function(client, bufnr)
@@ -12,13 +12,6 @@ local use_handlers_with_filetype = function(filetype_handlers_mapping)
             enabled = handler.handle(client, bufnr)
           }
         end)
-
-        if DEBUG.lsp_attached_handler then
-          vim.notify('[' .. client.name .. '] '
-            .. 'Activates '
-            .. vim.inspect(handlers_info)
-          )
-        end
       end
     end
     )

@@ -42,12 +42,12 @@ local function buf_is_terminal(bufnr)
 end
 
 local function setup() 
-  vim.api.nvim_create_user_command('Hterminal', function(command) 
+  vim.api.nvim_create_user_command('Hterminal', function(command)
     open_terminal_horizontal(command.args);
   end,
     { nargs = '?' })
 
-  vim.api.nvim_create_user_command('Vterminal', function(command) 
+  vim.api.nvim_create_user_command('Vterminal', function(command)
     open_terminal_vertical(command.args);
   end,
     { nargs = '?' })
@@ -63,7 +63,6 @@ local function setup()
   vim.keymap.set('t', '<C-a>v', '<C-\\><C-n>:Vterminal<CR>', { noremap = true, silent = true })
   vim.keymap.set('t', '<C-a>x', '<C-\\><C-n>:q!<CR>', { noremap = true, silent = true })
 end
-
 
 return {
   setup = setup,

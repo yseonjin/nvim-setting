@@ -1,5 +1,5 @@
-local tsserver_request = require('plugins.lsp.request.tsserver_request')
-local util = require('utils.path');
+local tsserver_request = require('@plugins.configs.hooks.tsserver_requester')
+local util = require('@utils.path');
 
 local function setting_for_tsserver_language_service(_, bufnr)
   assert(type(bufnr) == 'number', 'bufnr must be a number')

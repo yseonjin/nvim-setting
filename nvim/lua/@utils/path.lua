@@ -91,6 +91,12 @@ local function change_dir_to(dir)
   vim.cmd('cd ' .. vim.fn.fnameescape(dir))
 end
 
+local function change_cwd_to_root_dir_of_cur_file()
+  local rootDir = get_module_rootdir_of_cur_file()
+  vim.notify('CWD: ' .. rootDir)
+  change_dir_to(rootDir);
+end
+
 return {
   get_files_in_path = get_files_in_path,
   on_each_files_in_path = on_each_files_in_path,
@@ -98,6 +104,6 @@ return {
   get_module_rootdir_of_cur_file = get_module_rootdir_of_cur_file,
   get_current_file_path = get_current_file_path,
   get_current_dir_path = get_current_dir_path,
-  change_dir_to = change_dir_to
+  change_dir_to = change_dir_to,
+  change_cwd_to_root_dir_of_cur_file = change_cwd_to_root_dir_of_cur_file
 }
-

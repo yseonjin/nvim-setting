@@ -1,5 +1,5 @@
 local formatting_command = 'textDocument/formatting'
-local get_current_file_path = require('utils.path').get_current_file_path
+local get_current_file_path = require('@utils.path').get_current_file_path
 
 -- formatter
 local formatter_augroup = vim.api.nvim_create_augroup('Formatting', { clear = true })
