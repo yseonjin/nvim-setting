@@ -34,18 +34,14 @@ Plug('akinsho/bufferline.nvim', { tag = 'v3.*' })
 Plug('hood/popui.nvim')
 
 -- theme -----------------------
-
-Plug('folke/tokyonight.nvim', { branch = 'main' })
--- Plug('jacoborus/tender.vim')
---colorscheme tender
-
+Plug('Mofiqul/vscode.nvim')
 
 vim.fn['plug#end']()
 
 
 
 -- setup plugins
--- Require('@plugins.configs.theme.tokyonight')
+Require('@plugins.configs.theme.vscode')
 Require('@plugins.configs.nvim-tree')
 Require('@plugins.configs.nvim-comment')
 Require('@plugins.configs.nvim-lspconfig')

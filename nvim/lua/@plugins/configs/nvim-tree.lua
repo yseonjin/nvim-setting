@@ -1,4 +1,3 @@
-
 require('nvim-tree').setup({
   on_attach = on_attach,
   auto_reload_on_write = true,
@@ -13,7 +12,6 @@ require('nvim-tree').setup({
   reload_on_bufenter = false,
   respect_buf_cwd = false,
   on_attach = "disable",
-  remove_keymaps = false,
   select_prompts = false,
   view = {
     adaptive_size = false,
@@ -235,5 +233,6 @@ require('nvim-tree').setup({
     },
   },
 })
+
 
 
