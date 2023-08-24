@@ -54,6 +54,5 @@ local function jest_single_copy()
   vim.fn.system('echo "' .. cd_cmd .. ' && ' .. jest_cmd .. '" | pbcopy')
 end
 
-vim.notify('asdfasdf')
 vim.api.nvim_create_user_command('JestSingleCopy', jest_single_copy, {})
 vim.keymap.set('n', '<leader>jsc', ':JestSingleCopy<CR>', { silent = true });
